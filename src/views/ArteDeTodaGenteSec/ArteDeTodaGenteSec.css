@@ -1,0 +1,159 @@
+.full-section-adtg{
+    height: 90vh;
+    width: 100vw;
+    background-image: url('../../assets/img/bg-home.jpg'), url('../../assets/img/fundoRosa.png');
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+.logo-adtg{
+    margin: 0 4em;
+    position: absolute;
+    top: 3em;
+    left: 0em;
+}
+
+.text-section-adtg{
+    width: 49vw;
+    margin: 0 4em 7em 4em;
+    position: relative; 
+    justify-self: end;
+    align-self: center;
+    font-size: 2.2em;
+}
+
+.video-frame-container{
+    position: absolute;
+    bottom:2em;
+    right: 8em;
+    width: 30vw;
+    height: 40vh;
+    flex-wrap: wrap;
+}
+
+.video-frame{
+    width: 100%;
+    height: 80%;
+}
+
+.video-frame-footer{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+}
+
+.video-frame-footer p{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.youtube-button{
+    display: flex;
+    flex-direction: row;
+    background-color: #c4302b;
+    align-items: center;
+    margin-right: 2em;
+    padding: 0 1em;
+    border-radius: 1em;
+    text-decoration: none;
+
+}
+
+.youtube-button img{
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 1em;
+}
+
+.youtube-button p{
+    color: white;
+    margin: 0;
+}
+
+@media only screen and (max-width: 450px) {
+    .full-section-adtg{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        padding-bottom: 10em;
+    }
+    .logo-adtg{
+        position: relative;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        top:-2em;
+    }
+    .logo-adtg img{
+        width: 75%;
+    }
+    .video-frame-container{
+        position: static;
+    }
+    .text-section-adtg{
+        margin:0;
+        width: 85vw;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .text-section-adtg a{
+        text-align: center;
+        width: 40vw;
+        margin: auto;
+        margin-top: 1.5em;
+        font-size: 0.8em;
+    }
+    .video-frame-container{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+        margin-top: 7em;
+    }
+    .video-frame{
+        width: 100%;
+    }
+    .video-frame-footer{
+        font-size: 0.6em;
+        font-weight: bold;
+    }
+    .youtube-button{
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (max-width: 385px){
+    .text-section-adtg a{
+        font-size: 0.8em;
+    }
+    .video-frame-footer p{
+        font-size: 1em;
+    }
+    .youtube-button{
+        border-radius: 0.5em;
+        padding: 0 0.8em;
+    }
+    .youtube-button img{
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .text-section-adtg a{
+        font-size: 0.6em;
+    }
+    .video-frame-footer p{
+        font-size: 0.8em;
+    }
+}

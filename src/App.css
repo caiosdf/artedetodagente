@@ -3,3 +3,22 @@
 #root{
   font-family: 'Barlow Condensed', sans-serif;
 }
+
+.button{
+  font-family: 'Barlow Condensed', sans-serif;
+  background-color: #74d654;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.3em;
+  padding: 0.25em 0.75em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.8em;
+  text-align: justify;
+  z-index: 10;
+}
+
+p{
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #2e2c2c;
+  text-align: justify;
+}
