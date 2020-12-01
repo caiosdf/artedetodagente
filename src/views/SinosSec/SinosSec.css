@@ -1,0 +1,53 @@
+.full-section-sinos{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.red-section{
+    height: 10vh;
+    width: 100vw;
+    background-color: #ea3232;
+}
+
+.sinos-container{
+    max-height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 6em;
+}
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 60vw;
+}
+
+.col-1 a{
+    max-width: 20%;
+    align-self: end;
+}
+
+.logo-sinos{
+    max-width: 30vw;
+    max-height: 25vh;
+}
+
+.text-section-sinos{
+    margin-top: 4em;
+}
+
+.col-2{
+    max-width: 40vw;
+    max-height: 85vh;
+}
+
+.img-flautista{
+    max-height: 100vh;
+    max-width: 100%;
+    position: relative;
+    top: -8em;
+    left: -10em;
+}
