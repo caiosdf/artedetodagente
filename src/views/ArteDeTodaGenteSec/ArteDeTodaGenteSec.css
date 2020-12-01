@@ -1,11 +1,12 @@
 .full-section-adtg{
     height: 90vh;
-    width: 100vw;
+    max-width: 100vw;
     background-image: url('../../assets/img/bg-home.jpg'), url('../../assets/img/fundoRosa.png');
     background-position: top, bottom;
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     display: grid;
+    flex-wrap: wrap;
 }
 
 .logo-adtg{
