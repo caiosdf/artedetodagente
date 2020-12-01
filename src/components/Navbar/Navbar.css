@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.navbar-items-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-item{
+    font-size: 2em;
+    margin: 0 0.5em;
+    color: #8f7b56;
+}
+
+.navbar-dot{
+    height: 0.4em;
+    width: 0.4em;
+    border-radius: 100%;
+    background-color: #8f7b56;
+    margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 450px){
+    .navbar-items-container{
+        display: none;
+    }
+}
