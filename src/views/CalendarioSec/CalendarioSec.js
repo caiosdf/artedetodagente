@@ -64,10 +64,10 @@ function Calendario(){
     //     fetchDataUno()
     //   },[project])
     return(
-        <section className="full-section-calendario">
+        <section id="calendario" className="full-section-calendario">
             <div className="header">
                 <div className="img-container">
-                    <img className="img-calendario" src={imgCalendario} />
+                    <img className="img-calendario" src={imgCalendario} alt=""/>
                 </div>
                 <div className="toolbar">
                     <div className="months-nav">

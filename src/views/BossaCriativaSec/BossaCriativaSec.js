@@ -7,7 +7,7 @@ import boy from '../../assets/img/boy.png';
 
 function bossaCriativa(){
     return(
-        <section className="full-section-bossa">
+        <section id="bossa" className="full-section-bossa">
             <div className="cangaceiro-container">
                 <img className="cangaceiro" src={cangaceiro} alt="cangaceiro"/>
             </div>

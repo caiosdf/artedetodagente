@@ -14,7 +14,7 @@ function ArteDeTodaGente(){
             <section className="adtg-content">
                 <div className="text-container">
                     <p className="text-section">O Arte de Toda Gente engloba os projetos Bossa Criativa – Arte de Toda Gente, Um Novo Olhar e Sistema Nacional de Orquestras Sociais – Sinos; frutos da parceria entre a Fundação Nacional da Artes - Funarte e a Universidade Federal do Rio de Janeiro - UFRJ, com a curadoria de sua Escola de Música, envolvendo artistas e educadores, compartilhando cultura e conhecimento.</p>
-                    <a className="button">Conheça os projetos</a>
+                    <a className="button" href="#sinos">Conheça os projetos</a>
                 </div>
                 <section className="video-frame-container">
                     <YouEmbed url={'https://youtu.be/qGY4rgFvQCU'} />
