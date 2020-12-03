@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     height: 10vh;
+    max-width: 100vw;
+    max-height: 100px;
 }
 
 .navbar-items-container{
@@ -12,7 +14,7 @@
 }
 
 .navbar-item{
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0 0.5em;
     color: #8f7b56;
 }
@@ -25,8 +27,15 @@
     margin-top: 0.5em;
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 1300px){
+    .navbar-item{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 900px){
     .navbar-items-container{
         display: none;
     }
 }
+

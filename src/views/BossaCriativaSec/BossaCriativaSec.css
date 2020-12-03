@@ -1,26 +1,29 @@
 .full-section-bossa{
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     flex-direction: row;
-    background-color: #d2a510;
-    padding: 6em;
+    background-color: #E5BE32;
+    padding: 5vh 5vw 5vh 5vw;
 }
 
 .cangaceiro{
-    max-height: 45vw;
+    max-height: 90vh;
+    max-width: 20vw;
 }
 
 .content-container{
     display: flex;
     flex-direction: column;
-    max-width: 65vw;
-    padding-left: 2em;
+    align-items: flex-end;
+    max-width: 68vw;
+    margin-left: 2vw;
 }
 
 .content-container a{
     background-color: #ffffff;
     color: #000000;
+    align-self: flex-start;
 }
 
 .logo-container{
@@ -32,15 +35,184 @@
 }
 
 .logo-bossa{
-    margin-left: 8em;
+    margin-left: 8vw;
+    max-width: 40vw;
+}
+.boy{
+    max-width: 20vw;
 }
 
-.text-section-bossa{
+.text-section p{
+    text-align: justify;
+    text-align-last: right;
     margin-bottom: 2em;
 }
 
-.text-section-bossa p{
-    text-align: justify;
-    text-align-last: right;
-    font-size: 2.2em;
+@media only screen and (max-height:50vw){
+    .full-section-bossa{
+        max-height: none;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:1700px){
+    .cangaceiro{
+        max-height: 75vh;
+    }
+}
+
+@media only screen and (max-width:1450px){
+    .cangaceiro{
+        max-height: 65vh;
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (max-width:1150px){
+    .cangaceiro{
+        max-height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .full-section-bossa{
+        display: grid;
+        grid-gap: 0px;
+        height: auto;
+    }
+    .logo-container{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8rem;
+        max-height: 300px;
+    }
+    .boy{
+        /* max-height: 300px; */
+        margin-left: 25px;
+        
+    }
+    .logo-bossa{
+        margin-left: 0;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        max-width: 50vw;
+    }
+    .cangaceiro-container{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;    
+        max-width: 20vw;
+        max-height: 300px;
+    }
+    .cangaceiro{
+        max-height: 300px;
+        margin-top: 0;  
+        position: relative;
+        right: -3vw;  
+    }
+    .content-container{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .content-container p{
+        width: 90vw;
+        justify-self: center;
+        margin: auto;
+        text-align-last: left;
+    }
+    .content-container a{
+        align-self: flex-end;
+        margin: 4rem 0 2rem 0;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .logo-container{
+        max-height: 250px;
+    }
+    .cangaceiro-container{
+        max-height: 250px;
+    }
+    .cangaceiro{
+        right: -2vw;
+        max-height: 250px;
+    }
+}
+
+@media only screen and (max-width:730px){
+    .cangaceiro{
+        right: -1vw;
+    }
+}
+
+@media only screen and (max-width:620px){
+    .logo-container{
+        max-height: 200px;
+    }
+    .cangaceiro-container{
+        max-height: 200px;
+    }
+    .cangaceiro{
+        max-height: 200px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .logo-container{
+        max-height: 170px;
+        margin-bottom: 6rem;
+    }
+    .cangaceiro-container{
+        max-height: 170px;
+    }
+    .cangaceiro{
+        right: 0;
+        max-height: 170px;
+    }
+    .content-container p{
+        position: relative;
+        left: -5vw;
+        max-width: 80vw;
+        
+    }
+    .content-container a{
+        position: relative;
+        left: -5vw;
+    }
+}
+@media only screen and (max-width:450px){
+    .content-container p{
+        left: -3vw;
+    }
+    .content-container a{
+        left: -3vw;
+    }
+}
+@media only screen and (max-width:410px){
+    .logo-container{
+        max-height: 150px;
+        margin-bottom: 3rem;
+    }
+    .cangaceiro-container{
+        max-height: 150px;
+    }
+    .cangaceiro{
+        max-height: 150px;
+    }
+}
+@media only screen and (max-width:365px){
+    .logo-container{
+        max-height: 120px;
+    }
+    .cangaceiro-container{
+        max-height: 120px;
+    }
+    .cangaceiro{
+        max-height: 120px;
+    }
 }

@@ -1,36 +1,49 @@
-.full-section-adtg{
-    height: 90vh;
-    width: 100vw;
+.full-section{
+    max-height: 90vh;
     background-image: url('../../assets/img/bg-home.jpg'), url('../../assets/img/fundoRosa.png');
     background-position: top, bottom;
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
-    display: grid;
+    flex-direction: row;
 }
 
 .logo-adtg{
-    margin: 0 4em;
-    position: absolute;
-    top: 3em;
-    left: 0em;
+    width: 20vw;
+    position: relative;
+    top:-9vh;
 }
 
-.text-section-adtg{
-    width: 49vw;
-    margin: 0 4em 7em 4em;
-    position: relative; 
-    justify-self: end;
-    align-self: center;
-    font-size: 2.2em;
+.logo-adtg img{
+    max-width: 20vw;
 }
+
+.adtg-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 55vw;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+
+.text-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.text-container a{
+    margin-top: 6vh;
+    max-width: 250px;
+}
+
 
 .video-frame-container{
-    position: absolute;
-    bottom:2em;
-    right: 8em;
+    align-self: flex-end;
+    position: relative;
+    bottom:4em;
+    right: 2em;
     width: 30vw;
     height: 40vh;
-    flex-wrap: wrap;
 }
 
 .video-frame{
@@ -40,7 +53,7 @@
 
 .video-frame-footer{
     background-color: white;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -49,7 +62,7 @@
 }
 
 .video-frame-footer p{
-    font-size: 1.2em;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -58,17 +71,21 @@
     flex-direction: row;
     background-color: #c4302b;
     align-items: center;
-    margin-right: 2em;
+    margin-right: 0.8rem;
     padding: 0 1em;
-    border-radius: 1em;
+    border-radius: 0.7rem;
     text-decoration: none;
 
 }
 
 .youtube-button img{
-    max-width: 25px;
-    max-height: 25px;
-    margin-right: 1em;
+    width: 2.5rem;
+    height: 1.6rem;
+    margin-right: 0.3rem;
+}
+
+.youtube-button{
+    padding: 0 0.5em;
 }
 
 .youtube-button p{
@@ -76,72 +93,189 @@
     margin: 0;
 }
 
-@media only screen and (max-width: 450px) {
-    .full-section-adtg{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: center;
-        padding-bottom: 10em;
+@media only screen and (max-height: 880px){
+    .full-section{
+        max-height: 150vh;
     }
-    .logo-adtg{
-        position: relative;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        top:-2em;
-    }
-    .logo-adtg img{
-        width: 75%;
-    }
-    .video-frame-container{
-        position: static;
-    }
-    .text-section-adtg{
-        margin:0;
-        width: 85vw;
-        font-size: 1.5em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+}
 
+@media only screen and (max-height: 700px){
+    .full-section{
+        height: auto;
     }
-    .text-section-adtg a{
-        text-align: center;
-        width: 40vw;
-        margin: auto;
-        margin-top: 1.5em;
-        font-size: 0.8em;
+}
+
+@media only screen and (max-width: 1650px){
+    .video-frame-footer p{
+        font-size: 0.8rem;
+    }
+    .youtube-button img{
+        width: 2.2rem;
+        height: 1.4rem;
+    }
+    .text-section{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1400px){
+    .adtg-content{
+        margin-top: 3vh;
+    }
+    .text-section{
+        font-size: 1.8rem;
+    }
+    .text-container a{
+        width: 200px;
     }
     .video-frame-container{
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        width: 90vw;
-        margin-top: 7em;
+        height: 35vh;
     }
-    .video-frame{
-        width: 100%;
-    }
-    .video-frame-footer{
-        font-size: 0.6em;
-        font-weight: bold;
+    .video-frame-footer p{
+        font-size: 0.6rem;
+        font-weight: 600;
     }
     .youtube-button{
-        margin-right: 1em;
+        border-radius: 0.5rem;
+    }
+    .youtube-button img{
+        width: 1.8rem;
+        height: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .adtg-content{
+        margin-top: 0;
+    }
+    .text-section{
+        font-size: 1.6rem;
+    }
+    .text-container a{
+        width: 180px;
+    }
+    .video-frame-container{
+        height: 30vh;
+    }
+    .video-frame-footer{
+        padding: 0.5em;
+    }
+    .video-frame-footer p{
+        /* font-size: 0.5rem; */
+    }
+    .youtube-button{
+        margin-right: 0.5rem;
+        padding: 0 0.3rem;
+    }
+    .youtube-button img{
+        width: 1.4rem;
+        height: 1rem;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .video-frame-container{
+        position: static;
+        align-self: center;
+        margin-top: 7vh;
+        width: 45vw;
+        height: 30vh;
+    }
+    .video-frame-footer p{
+        font-size: 0.8rem;
+    }
+    .text-container{
+        max-width: 100%;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .full-section{
+        flex-direction: column;
+        align-items: center;
+        max-height: none;
+        height: auto;
+        margin-top: 5vh;
+    }
+    .logo-adtg{
+        width: 50vw;
+    }
+    .logo-adtg img{
+        max-width: 50vw;
+        top: -10vh;
+    }
+    .adtg-content{
+        height: auto;
+        max-width:96vw;
+        margin: 0;
+    }
+    .text-container{
+        max-width: 100%;
+        align-items: center;
+    }
+    .text-section{
+        font-size: 2.2rem;
+    }
+    .text-container a{
+        width: 250px;
+    }
+    .video-frame-container{
+        width: 90vw;
+        height: 45vh;
+        margin-top: 15vh;
+    }
+    .video-frame-footer p{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .text-section{
+        font-size: 1.8rem;
+    }
+    .video-frame-container{
+        height: 35vh;
+        margin-top: 10vh;
+    }
+    .text-container a{
+        width: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .logo-adtg{
+        width: 65vw;
+    }
+    .logo-adtg img{
+        max-width: 65vw;
+    }
+    .text-container a{
+        width: 200px;
+    }
+    .text-section{
+        width: 85vw;
+        font-size: 1.5em;
+    }
+    .video-frame-footer p{
+        font-size: 0.8rem;
     }
 }
 
 @media only screen and (max-width: 385px){
-    .text-section-adtg a{
-        font-size: 0.8em;
+    .text-section{
+        font-size: 1.3rem;
+    }
+    .text-container a{
+        width: 150px;
     }
     .video-frame-footer p{
-        font-size: 1em;
+        font-size: 0.7em;
     }
     .youtube-button{
-        border-radius: 0.5em;
-        padding: 0 0.8em;
+        border-radius: 0.3rem;
+        padding: 0 0.3rem;
     }
     .youtube-button img{
         max-width: 20px;
@@ -150,10 +284,10 @@
 }
 
 @media only screen and (max-width: 340px){
-    .text-section-adtg a{
-        font-size: 0.6em;
+    .text-section{
+        font-size: 1.1rem;
     }
     .video-frame-footer p{
-        font-size: 0.8em;
+        font-size: 0.55rem;
     }
 }
