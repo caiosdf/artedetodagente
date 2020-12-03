@@ -1,8 +1,7 @@
 .full-section{
     max-height: 90vh;
-    background-image: url('../../assets/img/bg-home.jpg'), url('../../assets/img/fundoRosa.png');
-    background-position: top, bottom;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url('../../assets/img/bg-home.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     flex-direction: row;
 }
