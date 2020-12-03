@@ -1,0 +1,78 @@
+.full-section-calendario{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 5vw;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+}
+.toolbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-end;
+    align-items: center;
+    background-color: #E6E6E6;
+    width: 67vw;
+    height: 4rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    z-index: 10;
+}
+.sinos-button{
+    height: 80%;
+    background-color: #7BC942;
+    color: #FFFFFF;
+}
+.img-container{
+    width:20vw;
+}
+.img-calendario{
+    width: 450px;
+    height: 400px;
+    position: relative;
+    top: -26vh;
+}
+.agenda-feed{
+    display:grid;
+    width: 90vw;
+    grid-template-columns: 1fr 1fr;
+}
+.agenda-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20vh;
+}
+.agenda-date{
+    color: #7BC942;
+    font-size: 5.4rem;
+    padding-right: 0.25em;
+    border-right: #000000;
+    border-style: dotted;
+    max-height: 100%;
+    margin:0;
+}
+.agenda-date h3{
+    margin:0;
+}
+.agenda-content{
+    display:flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.agenda-content h3{
+    font-size: 1.5rem;
+    color: #0071BD;
+    margin:0;
+}
+.agenda-content p{
+    font-size: 1.8rem;
+    margin:0;
+    color: #363636;
+}
