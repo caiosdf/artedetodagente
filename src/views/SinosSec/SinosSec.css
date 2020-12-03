@@ -1,0 +1,97 @@
+.full-section-sinos{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    padding-bottom: 5vh;
+}
+
+.red-section{
+    height: 10vh;
+    max-width: 100vw;
+    background-color: #EB1C2E;
+}
+
+.sinos-container{
+    max-height: 100%;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 5vw;
+}
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 60vw;
+}
+
+.col-1 a{    
+    align-self: end;
+}
+
+.logo-sinos{
+    margin-top: 4rem;
+    max-width: 35vw;
+    max-height: 35vh;
+    margin-bottom: 8rem;
+}
+
+.col-2{
+    max-width: 35vw;
+    max-height: 85vh;
+}
+
+.img-flautista{
+    height: 100%;
+    max-width: 100%;    
+    position: relative;
+    top: -2em;
+    left: -6em;
+}
+@media only screen and (max-height:50vw){
+    .full-section-sinos{
+        max-height: none;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .full-section-sinos{
+        max-height: none;
+        height: auto;
+        padding: 0;
+    }
+    .col-2{
+        height: 30vh;
+    }
+    .img-flautista{
+        top: -4em;
+        left: auto;
+    }
+    .logo-sinos{
+        max-width: 55vw;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    .col-1 p{
+        width: 89vw;
+        margin: auto;
+    }
+    .col-1 a{
+        margin: 5vh 0;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .col-2{
+        height: 25vh;
+    }
+    .img-flautista{
+        top:-2em;
+        left: -1em;
+    }
+    .logo-sinos{
+        margin-top: 1rem;
+    }
+}
