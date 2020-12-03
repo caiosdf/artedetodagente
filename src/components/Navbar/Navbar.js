@@ -7,11 +7,11 @@ function Navbar(){
             <div className="navbar-items-container">
                 <a className="navbar-item">Agenda</a>
                 <div className="navbar-dot"></div>
-                <a className="navbar-item">Sinos</a>
+                <a className="navbar-item" href="#sinos">Sinos</a>
                 <div className="navbar-dot"></div>
-                <a className="navbar-item">Bossa Criativa</a>
+                <a className="navbar-item" href="#bossa">Bossa Criativa</a>
                 <div className="navbar-dot"></div>
-                <a className="navbar-item">Um Novo Olhar</a>
+                <a className="navbar-item" href="#uno">Um Novo Olhar</a>
             </div>
         </div>
     );

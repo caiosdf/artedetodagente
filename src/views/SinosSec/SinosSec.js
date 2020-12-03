@@ -8,7 +8,7 @@ function SinosSec(){
 
     return(
         <>
-            <section className="full-section-sinos">
+            <section id="sinos" className="full-section-sinos">
                 <section className="red-section"></section>
                 <section className="sinos-container">
                     <section className="col-1">
