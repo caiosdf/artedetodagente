@@ -18,9 +18,12 @@ function Calendario(){
 
     const events_per_page = 6;
 
+ 
+
     useEffect(()=>{
         async function fetchData(){
           const response = await sinosApi.get('/schedules?_sort=date:ASC')
+          console.log(response)
           let schedules = response.data.map(item => new Date(item.date).getMonth())
           setSchedules(schedules)
           const todayMonth = new Date().getMonth()
@@ -28,6 +31,7 @@ function Calendario(){
         }
         fetchData()
     },[]);
+
 
     useEffect(()=>{
         if(project==='sinos'){
