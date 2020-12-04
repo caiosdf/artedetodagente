@@ -5,7 +5,7 @@ const sinosApi = axios.create({
 });
 
 const bossaApi = axios.create({ 
-    baseURL: 'https://backend.bossacriativa.art.br/'
+    baseURL: 'https://admin.bossacriativa.art.br/'
 });
 
 const unoApi = axios.create({ 

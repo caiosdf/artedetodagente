@@ -1,5 +1,5 @@
 .full-section-calendario{
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     background-color: #ffffff;
     display: flex;
@@ -9,7 +9,8 @@
 .header{
     display: flex;
     flex-direction: row;
-    height: 20vh;
+    height: 10vh;
+    justify-content: space-between;
 }
 .toolbar{
     display: flex;
@@ -18,16 +19,57 @@
     align-self: flex-end;
     align-items: center;
     background-color: #E6E6E6;
-    width: 67vw;
-    height: 4rem;
+    width: 60vw;
+    height: 3rem;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
     z-index: 10;
 }
-.sinos-button{
-    height: 80%;
-    background-color: #7BC942;
+.months-nav{
+    display: flex;
+    flex-direction: row;
+}
+.months-nav button{
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    background-color: #F8931F;
     color: #FFFFFF;
+    border: none;
+}
+.span-container{
+    height: 3rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8931F;
+    margin: 0 0.5rem;
+}
+.months-nav span{
+    font-size: 1.5em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.projects-nav button{
+    height: 3rem;
+    font-size: 1.3em;
+    color: #FFFFFF;
+    border: none;
+    margin-right: 0.5rem;
+}
+.geral-button{
+    background-color: #999999;
+}
+.sinos-button{
+    width: 5rem;
+    background-color: #7BC942;
+}
+.bossa-button{
+    background-color: #0071BD;
+}
+.uno-button{
+    background-color: #FF7BAC;
 }
 .img-container{
     width:20vw;
@@ -41,16 +83,17 @@
 .agenda-feed{
     display:grid;
     width: 90vw;
+    height: 70vh;
     grid-template-columns: 1fr 1fr;
+    padding: 15vh 0 5vh 0;
 }
 .agenda-item{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 20vh;
+    height: 15vh;
 }
 .agenda-date{
-    color: #7BC942;
     font-size: 5.4rem;
     padding-right: 0.25em;
     border-right: #000000;
@@ -75,4 +118,18 @@
     font-size: 1.8rem;
     margin:0;
     color: #363636;
+}
+.agenda-footer{
+    display:flex;
+    justify-content: flex-end;
+    height: 10vh;
+}
+.agenda-page-buttons button{
+    background-color: #F8931F;
+    color: #FFFFFF;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
 }
