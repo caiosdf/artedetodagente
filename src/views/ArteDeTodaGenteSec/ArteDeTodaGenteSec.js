@@ -9,7 +9,7 @@ function ArteDeTodaGente(){
     return(
         <section className="full-section">      
             <section className="logo-adtg">
-                <img src={logo} alt="logo arte de toda gente"></img>
+                <img src={logo} alt="logo do projeto arte de toda gente"></img>
             </section>
             <section className="adtg-content">
                 <div className="text-container">

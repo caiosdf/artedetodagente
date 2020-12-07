@@ -133,3 +133,10 @@
     font-size: 1.5rem;
     margin-right: 0.5rem;
 }
+
+@media only screen and (max-width: 900px){
+    .toolbar{
+        flex-direction: column;
+        justify-content: end;
+    }
+}

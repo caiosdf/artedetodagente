@@ -13,8 +13,8 @@ function bossaCriativa(){
             </div>
             <div className="content-container">
                 <div className="logo-container">
-                    <img className="boy" src={boy} alt="menino ouvindo musica"/>
-                    <img className="logo-bossa" src={logo} alt="logo bossa criativa"/>
+                    <img className="boy" src={boy} alt="menino ouvindo música"/>
+                    <img className="logo-bossa" src={logo} alt="logo do projeto bossa criativa"/>
                 </div>
                 <section className="text-section">
                     <p>No Bossa Criativa, arte, cultura e inclusão têm como palco a internet e patrimônios da humanidade. São mais de 180 artistas e educadores, de várias regiões do país, em apresentações, lives e oficinas de capacitação nas áreas de música, circo, artes visuais, dança, teatro e gestão cultural. Mais de 200 horas de conteúdo já estão no ar, com foco na diversidade e democratização da cultura.</p>
