@@ -92,14 +92,9 @@
     margin: 0;
 }
 
-@media only screen and (max-height: 880px){
+@media only screen and (min-height: 100vw){
     .full-section{
-        max-height: 150vh;
-    }
-}
-
-@media only screen and (max-height: 700px){
-    .full-section{
+        max-height: none;
         height: auto;
     }
 }
@@ -173,6 +168,9 @@
 }
 
 @media only screen and (max-width:1000px){
+    .full-section{
+        padding-bottom: 30vh;
+    }
     .video-frame-container{
         position: static;
         align-self: center;
@@ -196,7 +194,6 @@
         max-height: none;
         height: auto;
         margin-top: 5vh;
-        padding-bottom: 30vh;
     }
     .logo-adtg{
         width: 50vw;
@@ -221,8 +218,8 @@
         width: 250px;
     }
     .video-frame-container{
-        width: 90vw;
-        height: 45vh;
+        width: 65vw;
+        height: 55vh;
         margin-top: 15vh;
     }
     .video-frame-footer p{
@@ -230,12 +227,13 @@
     }
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:700px){
     .text-section{
         font-size: 1.8rem;
     }
     .video-frame-container{
-        height: 35vh;
+        width: 80vw;
+        height: 50vh;
         margin-top: 10vh;
     }
     .text-container a{
@@ -259,7 +257,7 @@
         font-size: 1.5em;
     }
     .video-frame-footer p{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -271,7 +269,7 @@
         width: 150px;
     }
     .video-frame-footer p{
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
     .youtube-button{
         border-radius: 0.3rem;
@@ -288,6 +286,6 @@
         font-size: 1.1rem;
     }
     .video-frame-footer p{
-        font-size: 0.55rem;
+        font-size: 0.5rem;
     }
 }
