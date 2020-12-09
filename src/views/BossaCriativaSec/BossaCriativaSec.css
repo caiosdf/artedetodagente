@@ -112,8 +112,6 @@
     .cangaceiro{
         max-height: 300px;
         margin-top: 0;  
-        position: relative;
-        right: -3vw;  
     }
     .content-container{
         grid-row-start: 1;
@@ -141,14 +139,14 @@
         max-height: 250px;
     }
     .cangaceiro{
-        right: -2vw;
         max-height: 250px;
     }
 }
 
 @media only screen and (max-width:730px){
     .cangaceiro{
-        right: -1vw;
+        position: relative;
+        left: -1vw;
     }
 }
 
@@ -164,17 +162,19 @@
     }
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:550px){
     .logo-container{
-        max-height: 170px;
+        max-height: 150px;
         margin-bottom: 6rem;
+        position: relative;
+        left: 3vw;
     }
     .cangaceiro-container{
-        max-height: 170px;
+        max-height: 150px;
     }
     .cangaceiro{
-        right: 0;
-        max-height: 170px;
+        left: 1vw;
+        max-height: 150px;
     }
     .content-container p{
         position: relative;
@@ -194,6 +194,9 @@
     .content-container a{
         left: -3vw;
     }
+    .boy{
+        margin-right: 1vw;
+    }
 }
 @media only screen and (max-width:410px){
     .logo-container{
@@ -204,6 +207,7 @@
         max-height: 150px;
     }
     .cangaceiro{
+        left: 0;
         max-height: 150px;
     }
 }
@@ -215,6 +219,7 @@
         max-height: 120px;
     }
     .cangaceiro{
+        left: -0.5vw;
         max-height: 120px;
     }
 }
