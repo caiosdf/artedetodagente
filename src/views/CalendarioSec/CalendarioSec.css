@@ -134,7 +134,22 @@
     font-size: 1.5rem;
     margin-right: 0.5rem;
 }
-
+@media only screen and (max-width: 150vh){
+    .toolbar{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-self: center;
+        width: 100%;
+        margin:0;
+        background-color: #FFFFFF;
+    }
+    .months-nav{
+        margin-bottom: 3vh;
+        background-color: #E6E6E6;
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.5rem;
+    }
+}
 @media only screen and (max-width: 900px){
     .full-section-calendario{
         padding: 0 2vw 5vh 2vw;
@@ -282,5 +297,10 @@
     .agenda-footer button{
         height: 2rem;
         width: 2rem;
+    }
+}
+@media only screen and (max-width:340px){
+    .agenda-footer{
+        width:96vw;
     }
 }
