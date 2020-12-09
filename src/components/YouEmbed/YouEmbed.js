@@ -8,7 +8,7 @@ function YouEmbed(props) {
   return (
     <iframe className="video-frame"
       title={vid}
-      src={`https://www.youtube.com/embed/${vid}?autoplay=1`}
+      src={`https://www.youtube.com/embed/${vid}`}
       frameBorder="0"
       allow="fullscreen" 
     ></iframe>

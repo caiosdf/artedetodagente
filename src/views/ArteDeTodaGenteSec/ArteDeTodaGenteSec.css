@@ -1,5 +1,6 @@
 .full-section{
-    max-height: 90vh;
+    min-height: 100vh;
+    height: auto;
     background: url('../../assets/img/fundo-rosa.svg') bottom, url('../../assets/img/bg-home.jpg') top;
     background-repeat: no-repeat, no-repeat;
     background-size: auto, cover;
