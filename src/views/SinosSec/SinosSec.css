@@ -1,6 +1,7 @@
 .full-section-sinos{
     max-width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-color: #ffffff;
     padding-bottom: 5vh;
 }
