@@ -186,15 +186,18 @@ function Calendario(){
                     geralEvents.sinos.events.map(item => {
                         item.cor = geralEvents.sinos.cor;
                         arrayEvents.push(item);
+                        return 0;
                     });
                 }
                 if(geralEvents.uno.events) geralEvents.uno.events.map(item => {
                     item.cor = geralEvents.uno.cor;
                     arrayEvents.push(item);
+                    return 0;
                 });
                 if(geralEvents.bossa.events) geralEvents.bossa.events.map(item => {
                     item.cor = geralEvents.bossa.cor;
                     arrayEvents.push(item);
+                    return 0;
                 });
                 function compara(a, b){
                     if(a.date > b.date) return 1;
