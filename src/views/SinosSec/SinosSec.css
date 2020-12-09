@@ -39,8 +39,8 @@
 }
 
 .col-2{
-    max-width: 35vw;
-    max-height: 85vh;
+    width: 880px;
+    height: auto;
 }
 
 .img-flautista{
@@ -56,14 +56,22 @@
         height: auto;
     }
 }
-@media only screen and (max-width:1500px){
+@media only screen and (max-width: 1700px){
     .col-2{
-        max-height: 75vh;
+        width: 600px;
+        height: auto;
+    }
+}
+@media only screen and (max-width:1550px){
+    .col-2{
+        width: 543px;
+        height: 728px;
     }
 }
 @media only screen and (max-width:1400px){
     .col-2{
-        max-height: 65vh;
+        width: 490px;
+        height: 657px;
     }
 }
 @media only screen and (max-width:1200px){
@@ -73,12 +81,14 @@
 }
 @media only screen and (max-width:1100px){
     .col-2{
-        max-height: 65vh;
+        width: 385px;
+        height: 516px;
     }
 }
 @media only screen and (max-width:1000px){
     .col-2{
-        max-height: 60vh;
+        width: 350px;
+        height: 469px;
     }
     .img-flautista{
         max-width: 100%;
@@ -91,7 +101,8 @@
         padding: 0;
     }
     .col-2{
-        height: 30vh;
+        width: 266px;
+        height: 356px;
     }
     .img-flautista{
         top: -4em;
@@ -104,16 +115,34 @@
     }
     .col-1 p{
         width: 89vw;
-        margin: auto;
+        margin-top: 4rem;
     }
     .col-1 a{
         margin: 5vh 0;
     }
 }
-
+@media only screen and (max-width:700px){
+    .col-2{
+        width: 246px;
+        height: 330px;
+    }
+}
+@media only screen and (max-width:650px){
+    .col-2{
+        width: 227px;
+        height: 304px;
+    }
+}
+@media only screen and (max-width:550px){
+    .col-2{
+        width: 190px;
+        height: 255px;
+    }
+}
 @media only screen and (max-width:450px){
     .col-2{
-        height: 25vh;
+        width: 150px;
+        height: 201px;
     }
     .img-flautista{
         top:-2em;
@@ -121,5 +150,29 @@
     }
     .logo-sinos{
         margin-top: 1rem;
+    }
+}
+@media only screen and (max-width:415px){
+    .col-2{
+        width: 130px;
+        height: 174px;
+    }
+}
+@media only screen and (max-width:385px){
+    .col-2{
+        width: 110px;
+        height: 147px;
+    }
+    .img-flautista{
+        left: 0.5em;
+    }
+}
+@media only screen and (max-width:350px){
+    .col-2{
+        width: 100px;
+        height: 134px;
+    }
+    .img-flautista{
+        left: 0;
     }
 }
