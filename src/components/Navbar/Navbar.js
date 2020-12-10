@@ -1,17 +1,18 @@
 import React from 'react';
 import './Navbar.css';
+import {scroll} from '../../util';
 
 function Navbar(){
     return(
         <div className="navbar">
             <div className="navbar-items-container">
-                <a className="navbar-item" href="#calendario">Agenda</a>
+                <button className="navbar-item" onClick={()=>scroll('#calendario')}>Agenda</button>
                 <div className="navbar-dot"></div>
-                <a className="navbar-item" href="#sinos">Sinos</a>
+                <button className="navbar-item" onClick={()=>scroll('#sinos')}>Sinos</button>
                 <div className="navbar-dot"></div>
-                <a className="navbar-item" href="#bossa">Bossa Criativa</a>
+                <button className="navbar-item" onClick={()=>scroll('#bossa')}>Bossa Criativa</button>
                 <div className="navbar-dot"></div>
-                <a className="navbar-item" href="#uno">Um Novo Olhar</a>
+                <button className="navbar-item" onClick={()=>scroll('#uno')}>Um Novo Olhar</button>
             </div>
         </div>
     );
