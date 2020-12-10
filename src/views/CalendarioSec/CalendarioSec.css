@@ -151,6 +151,40 @@
         border-radius: 0.5rem;
     }
 }
+@media only screen and (max-width: 1650px){
+    .img-container{
+        width: 400px;
+        height: 356px;
+    }
+    .img-calendario{
+        top: -182px;
+    }
+}
+@media only screen and (max-width: 1400px){
+    .img-container{
+        width: 300px;
+        height: 267px;
+    }
+    .img-calendario{
+        top: -137px;
+    }
+}
+@media only screen and (max-width: 1350px){
+    .toolbar{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-self: center;
+        width: 100%;
+        margin:0;
+        background-color: #FFFFFF;
+    }
+    .months-nav{
+        margin-bottom: 3vh;
+        background-color: #E6E6E6;
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.5rem;
+    }
+}
 @media only screen and (max-width: 900px){
     .full-section-calendario{
         padding: 0 2vw 5vh 2vw;
@@ -162,11 +196,11 @@
     }
     .img-container{
         width: 250px;
-        height: 200px;
+        height: 222px;
         z-index: 15;
     }
     .img-calendario{
-        top: -105px;
+        top: -114px;
     } 
     .toolbar{
         flex-direction: column;
