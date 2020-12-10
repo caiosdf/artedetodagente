@@ -14,6 +14,9 @@
 }
 
 .navbar-item{
+    border: none;
+    cursor: pointer;
+    background: none;
     font-size: 2rem;
     margin: 0 0.5em;
     color: #8f7b56;

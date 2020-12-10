@@ -31,9 +31,12 @@
     flex-direction: column;
 }
 
-.text-container a{
+.text-container button{
     margin-top: 6vh;
     max-width: 250px;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 
@@ -120,8 +123,9 @@
     .text-section{
         font-size: 1.8rem;
     }
-    .text-container a{
+    .text-container button{
         width: 200px;
+        font-size: 1.6rem;
     }
     .video-frame-container{
         height: 35vh;
@@ -146,17 +150,15 @@
     .text-section{
         font-size: 1.6rem;
     }
-    .text-container a{
+    .text-container button{
         width: 180px;
+        font-size: 1.4rem;
     }
     .video-frame-container{
         height: 30vh;
     }
     .video-frame-footer{
         padding: 0.5em;
-    }
-    .video-frame-footer p{
-        /* font-size: 0.5rem; */
     }
     .youtube-button{
         margin-right: 0.5rem;
@@ -215,8 +217,9 @@
     .text-section{
         font-size: 2.2rem;
     }
-    .text-container a{
+    .text-container button{
         width: 250px;
+        font-size: 2rem;
     }
     .video-frame-container{
         width: 65vw;
@@ -237,7 +240,7 @@
         height: 50vh;
         margin-top: 10vh;
     }
-    .text-container a{
+    .text-container button{
         width: 200px;
     }
 
@@ -250,8 +253,9 @@
     .logo-adtg img{
         max-width: 65vw;
     }
-    .text-container a{
+    .text-container button{
         width: 200px;
+        font-size: 1.3rem;
     }
     .text-section{
         width: 85vw;
@@ -266,8 +270,9 @@
     .text-section{
         font-size: 1.3rem;
     }
-    .text-container a{
+    .text-container button{
         width: 150px;
+        font-size: 1.1rem;
     }
     .video-frame-footer p{
         font-size: 0.6em;
