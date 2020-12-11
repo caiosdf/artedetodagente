@@ -47,6 +47,7 @@
     background-color: #F8931F;
     color: #FFFFFF;
     border: none;
+    border-radius: 5px;
 }
 .span-container{
     height: 3rem;
@@ -56,6 +57,7 @@
     align-items: center;
     background-color: #F8931F;
     margin: 0 0.5rem;
+    border-radius: 5px;
 }
 .months-nav span{
     font-size: 1.5em;
@@ -138,6 +140,7 @@
     width: 3rem;
     font-size: 1.5rem;
     margin-right: 0.5rem;
+    border-radius: 5px;
 }
 @media only screen and (max-width: 150vh){
     .toolbar{

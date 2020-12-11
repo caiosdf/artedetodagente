@@ -42,7 +42,7 @@ function Calendario(){
                 setEvents(response.data ?? []);
                 let pageButtons = [];
                 for(let x = 1; x <= pagesNumber; x++){
-                    pageButtons.push(<button onClick={()=>setPage(x)} key={x}>{x}</button>);
+                    pageButtons.push(<button onClick={()=>setPage(x)} key={x} style={{backgroundColor:'#7BC942'}}>{x}</button>);
                 }
                 setPageButtons(pageButtons);
               }
@@ -53,11 +53,11 @@ function Calendario(){
                 const eventsCount = await unoApi.get(`/schedule-events/count?schedule.month=${months[current_month]}`);
                 let pagesNumber = Math.ceil(eventsCount.data/events_per_page);
                 const response = await unoApi.get(`/schedule-events?_sort=date:ASC&schedule.month=${months[current_month]}&_limit=${events_per_page}&_start=${(page - 1)*events_per_page}`);
-                response.data.cor = "#FF7BAC";
+                response.data.cor = '#FF7BAC';
                 setEvents(response.data ?? []);
                 let pageButtons = [];
                 for(let x = 1; x <= pagesNumber; x++){
-                    pageButtons.push(<button onClick={()=>setPage(x)} key={x}>{x}</button>);
+                    pageButtons.push(<button onClick={()=>setPage(x)} key={x} style={{backgroundColor:'#FF7BAC'}}>{x}</button>);
                 }
                 setPageButtons(pageButtons);
               }
@@ -72,7 +72,7 @@ function Calendario(){
                 setEvents(response.data);
                 let pageButtons = [];
                 for(let x = 1; x <= pagesNumber; x++){
-                    pageButtons.push(<button onClick={()=>setPage(x)} key={x}>{x}</button>);
+                    pageButtons.push(<button onClick={()=>setPage(x)} key={x} style={{backgroundColor:'#0071BD'}}>{x}</button>);
                 }
                 setPageButtons(pageButtons);
             }
@@ -250,11 +250,17 @@ function Calendario(){
                 </div>
                 <div className="toolbar">
                     <div className="months-nav">
-                        <button onClick={()=>prevMonth()} style={{opacity: prevEnabled ? 1 : 0.5}}>◀</button>
-                        <div className="span-container">
+                        <button onClick={()=>prevMonth()} style={{
+                            opacity: prevEnabled ? 1 : 0.5,
+                            backgroundColor:`${events.cor ? events.cor : ''}`
+                            }}>◀</button>
+                        <div className="span-container" style={{backgroundColor:`${events.cor ? events.cor : ''}`}}>
                             <span>{months[current_month] || `...`}</span>
                         </div>
-                        <button onClick={()=>nextMonth()} style={{opacity: nextEnabled ? 1 : 0.5}}>▶</button>
+                        <button onClick={()=>nextMonth()} style={{
+                            opacity: nextEnabled ? 1 : 0.5,
+                            backgroundColor:`${events.cor ? events.cor : ''}`
+                            }}>▶</button>
                     </div>
                     <div className="projects-nav">
                         <button className="geral-button" onClick={()=>{
@@ -298,9 +304,15 @@ function Calendario(){
             </div>
             <div className="agenda-footer">
                 <div className="agenda-page-buttons">
-                    <button onClick={()=>prevPage()} style={{opacity: prevPageEnabled ? 1 : 0.5}}>◀</button>
+                    <button onClick={()=>prevPage()} style={{
+                        opacity: prevPageEnabled ? 1 : 0.5,
+                        backgroundColor:`${events.cor ? events.cor : ''}`
+                        }}>◀</button>
                     {page_buttons}
-                    <button onClick={()=>nextPage()} style={{opacity: nextPageEnabled ? 1 : 0.5}}>▶</button>
+                    <button onClick={()=>nextPage()} style={{
+                        opacity: nextPageEnabled ? 1 : 0.5,
+                        backgroundColor:`${events.cor ? events.cor : ''}`
+                        }}>▶</button>
                 </div>
             </div>
         </section>
