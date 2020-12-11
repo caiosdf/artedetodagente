@@ -47,7 +47,8 @@
     bottom:4em;
     right: 2em;
     width: 30vw;
-    height: 40vh;
+    min-height: 40vh;
+    height: auto;
 }
 
 .video-frame{
@@ -129,7 +130,7 @@
         font-size: 1.6rem;
     }
     .video-frame-container{
-        height: 35vh;
+        min-height: none;
     }
     .video-frame-footer p{
         font-size: 0.6rem;
@@ -154,9 +155,6 @@
     .text-container button{
         width: 180px;
         font-size: 1.4rem;
-    }
-    .video-frame-container{
-        height: 30vh;
     }
     .video-frame-footer{
         padding: 0.5em;
@@ -224,7 +222,6 @@
     }
     .video-frame-container{
         width: 65vw;
-        height: 55vh;
         margin-top: 15vh;
     }
     .video-frame-footer p{
@@ -238,7 +235,6 @@
     }
     .video-frame-container{
         width: 80vw;
-        height: 50vh;
         margin-top: 10vh;
     }
     .text-container button{
