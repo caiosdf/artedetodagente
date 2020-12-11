@@ -242,18 +242,6 @@ function Calendario(){
         if(prevEnabled) setPage(pageIndex - 1);
     }
 
-
-
-    // useEffect(()=>{
-    //     async function fetchDataUno(){
-    //        const response = await unoApi.get('/schedules?_sort=date:ASC')
-    //       let schedules = response.data.map(item => new Date(item.date).getMonth())
-    //       setSchedulesUno(schedules)
-    //       const todayMonth = new Date().getMonth()
-    //       setCurrentMonthUno(schedules.indexOf(todayMonth) !== -1 ? todayMonth : R.last(schedules))
-    //     }
-    //     fetchDataUno()
-    //   },[project])
     return(
         <section id="calendario" className="full-section-calendario">
             <div className="header">

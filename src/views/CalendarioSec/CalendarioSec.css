@@ -1,6 +1,6 @@
 .full-section-calendario{
     max-width: 100vw;
-    min-height: 100vh;
+    max-height: 100vh;
     height: auto;
     background-color: #ffffff;
     display: flex;
@@ -87,7 +87,9 @@
     width: 90vw;
     height: 70vh;
     grid-template-columns: 1fr 1fr;
-    padding: 15vh 0 5vh 0;
+    grid-column-gap: 30px;
+    padding: 10rem 0 5rem 0;
+    align-self: center;
 }
 .agenda-item{
     display: flex;
@@ -151,6 +153,31 @@
         border-radius: 0.5rem;
     }
 }
+@media only screen and (max-height: 1000px){
+    .agenda-item{
+        height: 10vh;
+    }
+    .agenda-date{
+        font-size: 3.5rem;
+    }
+    .agenda-content h3{
+        font-size: 1.2rem;
+    }
+    .agenda-content p{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-height: 650px){
+    .agenda-date{
+        font-size: 3rem;
+    }
+    .agenda-content h3{
+        font-size: 1rem;
+    }
+    .agenda-content p{
+        font-size: 1.2rem;
+    }
+}
 @media only screen and (max-width: 1650px){
     .img-container{
         width: 400px;
@@ -200,7 +227,7 @@
         z-index: 15;
     }
     .img-calendario{
-        top: -114px;
+        top: -106px;
     } 
     .toolbar{
         flex-direction: column;
@@ -237,14 +264,21 @@
     .uno-button{
         width: 28vw;
     }
-    .agenda-feed{
-        grid-template-columns: 1fr;
-        height: auto;
-        margin-top: 5vh;
-        align-self: center;
-    }
     .agenda-item{
-        margin-bottom: 5vh;
+        height: 10vh;
+    }
+    .agenda-date{
+        font-size: 3.5rem;
+    }
+    .agenda-content h3{
+        font-size: 1.2rem;
+    }
+    .agenda-content p{
+        font-size: 1.5rem;
+    }
+    .agenda-feed{
+        padding-top: 5rem;
+        padding-bottom: 0;
     }
     .agenda-footer{
         justify-content: center;
@@ -256,8 +290,21 @@
     }
 }
 @media only screen and (max-width:650px){
+    .full-section-calendario{
+        max-height: none;
+    }
     .projects-nav button{
         font-size: 1.1rem;
+    }
+    .agenda-feed{
+        grid-template-columns: 1fr;
+        height: auto;
+        margin-top: 5vh;
+        align-self: center;
+        padding-top: 0;
+    }
+    .agenda-item{
+        margin-bottom: 5vh;
     }
 }
 @media only screen and (max-width:550px){
@@ -278,6 +325,9 @@
     .projects-nav button{
         margin-right: 0.15rem;
         font-size: 0.8rem;
+    }
+    .agenda-feed{
+        padding-top: 5rem;
     }
     .agenda-date{
         display: flex;
