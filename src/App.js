@@ -5,6 +5,7 @@ import Calendario from '../src/views/CalendarioSec/CalendarioSec';
 import Sinos from '../src/views/SinosSec/SinosSec';
 import BossaCriativa from '../src/views/BossaCriativaSec/BossaCriativaSec';
 import Uno from '../src/views/UnoSec/UnoSec';
+import Footer from '../src/views/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Sinos />
       <BossaCriativa />
       <Uno />
+      <Footer />
     </>
   );
 }
