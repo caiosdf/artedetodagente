@@ -68,6 +68,7 @@
     color: #FFFFFF;
     border: none;
     margin-right: 0.5rem;
+    border-radius: 5px;
 }
 .geral-button{
     background-color: #999999;
